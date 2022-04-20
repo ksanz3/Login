@@ -55,13 +55,13 @@
   
   .footer{
     width: 100vw;
-    height: 10vh;
+    height: 5vh;
     background-color: #e79f9f;
   }
 
   .footer p {
     margin: auto;
-    margin-top: 15px;
+    margin-top: 2.5px;
   }
 
 img {
