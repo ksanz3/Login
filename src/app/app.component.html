@@ -62,10 +62,11 @@
   .content {
     display: flex;
     margin: 82px auto 32px;
-    padding: 0 16px;
+    padding: 0;
     max-width: 960px;
     flex-direction: column;
     align-items: center;
+    color: #fff;
   }
 
   .card-container {
@@ -114,7 +115,7 @@
   }
 
   .card.highlight-card {
-    background-color: #3b3838;
+    background-color: #0a0909;
     color: #ffffff;
     font-weight: 500;
     border: none;
@@ -186,11 +187,10 @@
     align-items: center;
   }
 
-  .foot-img img {
-    width: 100px;
-    height: 20px;
-    text-align: center;
+  footer p {
+    color: #000000;
   }
+
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
@@ -229,27 +229,27 @@
   <div class="card highlight-card card-small">
     <h3>INGRESA</h3>
   </div>
+  <form action="192.168.0.1" method="get">
   <div class="card-container"> 
     <label for="correo">Email:
-    <input type="email" name="correo" placeholder="arcorp@gmail.com" #selection required></label>
+    <input type="email" name="correo" placeholder="arcorp@gmail.com" #selection required=""></label>
   </div>
   <div class="card-container"> 
     <label for="password">Contraseña:
-    <input type="password" name="password" required></label>
+    <input type="password" name="password" required=""></label>
   </div>
   <div class="card-container">
     <input class="send" type="submit" value="Entrar">
   </div>
+</form>
   <div class="card">
   <a href="">olvidaste tu contraseña?</a>
   </div>
 
   <!-- Footer -->
   <footer>
-    <div class="card highlight-card card-small">
-      <p>Todos los derechos reservados | Arcorp C.A. J-41168449-0</p>
+    <div class="footer">
+      <p>Todos los derechos reservados ARCORP C.A. J-41168449-0</p>
+   
     </div>
   </footer>
-  <div class="foot-img">
-  <img src="../assets/arcorp.png" alt="ARCORP">
-</div>
