@@ -52,6 +52,17 @@
     display: flex;
     align-items: center;
   }
+  
+  .footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: #e79f9f;
+  }
+
+  .footer p {
+    margin: auto;
+    margin-top: 15px;
+  }
 
 img {
     margin: 1px;
@@ -200,15 +211,6 @@ img {
   .circle-link:hover {
     transform: translateY(-0.25rem);
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .footer{
-    width: 100vw;
-    background-color: #e79f9f;
-  }
-
-  .footer p {
-    margin: auto;
   }
 
 /* Responsive Styles */
