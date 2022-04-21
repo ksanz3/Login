@@ -1,13 +1,4 @@
-:host {
-    font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  h1,
+h1,
   h2,
   h3,
   h4,
@@ -32,38 +23,7 @@
   a:hover {
     color: #e79f9f;
   }
-
-  label {
-    text-shadow: #3d1111 1px 1px 5px;
-  }
-
-  input {
-    display: block;
-  }
-
   
-  footer {
-    display: flex;
-    align-items: center;
-    margin-top: 2px;
-  }
-
-  footer a {
-    display: flex;
-    align-items: center;
-  }
-  
-  .footer{
-    width: 100vw;
-    height: 5vh;
-    background-color: #e79f9f;
-  }
-
-  .footer p {
-    margin: auto;
-    margin-top: 2.5px;
-  }
-
 img {
     margin: 1px;
     padding: 1px;
@@ -73,8 +33,7 @@ img {
     flex: 1;
     margin-left: 50%;
   }
-
-  .toolbar {
+.toolbar {
     position: absolute;
     top: 0;
     left: 0;
@@ -105,124 +64,4 @@ img {
   .toolbar #twitter-logo:hover,
   .toolbar #instagram-logo:hover {
     opacity: 0.8;
-  }
-
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-    color: #000000;
-  }
-
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
-  }
-
-  .card {
-    all: unset;
-    border-radius: 4px;
-    border: 1px solid #474040;
-    background-color: #818080;
-    height: 2vh;
-    width: 240px;
-    margin: 4px;
-    padding: 15px 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    line-height: 24px;
-  }
-
-  .card a:hover {
-    color: #e79f9f;
-  }
-  
-  .card-container .card:not(:last-child) {
-    margin-right: 0;
-  }
-
-  .card.card-small {
-    height: 16px;
-    width: 168px;
-  }
-
-
-  .card a {
-    color: #ffffff;
-    text-shadow: #000000 2px 2px 2px;
-  }
-
-  .card-container .card:not(.highlight-card) {
-    cursor: pointer;
-  }
-
-  .card-container .card:not(.highlight-card):hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-  }
-
-  .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
-  }
-
-  .card.highlight-card {
-    background-color: #0a0909;
-    color: #ffffff;
-    font-weight: 500;
-    border: none;
-    width: auto;
-    min-width: 30%;
-    position: relative;
-  }
-  .send {
-    margin: 0px;
-    margin-bottom: 10px;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: #ff0000;
-    color: #ffffff;
-    border-radius: 8%;
-    box-shadow: #333 2px 2px 5px 1px;
-  }
-
-  .circle-link {
-    height: 40px;
-    width: 40px;
-    border-radius: 40px;
-    margin: 8px;
-    background-color: white;
-    border: 1px solid #eeeeee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: 1s ease-out;
-  }
-
-  .circle-link:hover {
-    transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
-
-/* Responsive Styles */
-@media screen and (max-width: 767px) {
-    .card-container > *:not(.circle-link) ,
-    .terminal {
-      width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
   }
