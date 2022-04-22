@@ -11,4 +11,8 @@ export class UsersService {
   login(user: any): Observable<any> {
     return this.http.post("https://reqres.in/api/login", user);
   }
+
+  register(user: any): Observable<any> {
+    return this.http.post("https://reqres.in/api/register", user);
+  }
 }
