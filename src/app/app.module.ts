@@ -13,9 +13,10 @@ import { UsersComponent } from './users/users.component';
 
 import { UsersService } from './users.service';
 import { CookieService } from 'ngx-cookie-service';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
-  declarations: [AppComponent, UsersComponent, LoginComponent, RegisterComponent, HomeComponent],
+  declarations: [AppComponent, UsersComponent, LoginComponent, RegisterComponent, HomeComponent, ToolbarComponent],
   imports: [BrowserModule, routing, FormsModule, HttpClientModule],
   providers: [CookieService, UsersService],
   bootstrap: [AppComponent]
