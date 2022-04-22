@@ -19,7 +19,7 @@
 
   .custom-form {
     min-width: 300px;
-    max-width: 60%;
+    max-width: 40vw;
     margin: 0px auto;
     padding: 2rem 3rem;
     margin: auto;
@@ -55,4 +55,27 @@
     border-radius: 1.5rem;
     box-shadow: 3px 3px 8px #e29393;
     cursor: pointer;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    margin-top: 8vh;
+  }
+
+  footer a {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer{
+    width: 100vw;
+    height: 5vh;
+    background-color: #e79f9f;
+  }
+
+  h6 {
+    margin: auto;
+    margin-top: 1vh;
+    font-weight: bold;
   }
