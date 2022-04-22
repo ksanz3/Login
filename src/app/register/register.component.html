@@ -1,27 +1,27 @@
 <!-- register.component.html -->
 <div class="register">
     <form class="custom-form" method="post">
-        <h1>Register</h1>
+        <h1>REGISTRATE</h1>
         <input
         type="email"
         [(ngModel)]="email"
         name="email"
-        placeholder="Email"
+        placeholder="Correo"
         required="required"/>
     <input
         type="password"
         [(ngModel)]="password"
         name="password"
-        placeholder="Password"
+        placeholder="Contraseña"
         required="required"
     />
     <input
         type="password"
         [(ngModel)]="confirmPassword"
         name="password"
-        placeholder="Repeat the password"
+        placeholder="Repite la contraseña"
         required="required"
     />
-    <button type="submit" (click)="register()">Register</button>
+    <button type="submit" (click)="register()">Registrar</button>
     </form>
 </div>

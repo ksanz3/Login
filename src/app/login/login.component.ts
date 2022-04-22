@@ -1,6 +1,6 @@
 import { Component} from '@angular/core';
 import { UsersService } from '../users.service';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,12 +11,13 @@ export class LoginComponent {
   email!: string;
   password!: string;
 
-  constructor(public userService: UsersService) { }
+  constructor(public userService: UsersService, public router: Router) { }
 
   login() {
     const user = {email: this.email, password: this.password};
     this.userService.login(user).subscribe( data => {
-      console.log(data);
+      this.userService.setToken(data.token);
+      this.router.navigateByUrl('/');
     });
   }
 }
