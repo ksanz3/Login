@@ -16,7 +16,6 @@
     text-shadow: #ffffff 2px 2px 10px
   }
 
-
   .custom-form {
     min-width: 300px;
     max-width: 40vw;
@@ -60,7 +59,8 @@
   footer {
     display: flex;
     align-items: center;
-    margin-top: 8vh;
+    margin-top: 10vh;
+    font-family: arial;
   }
 
   footer a {
