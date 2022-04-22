@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnChanges, OnInit, OnDestroy, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
+export class AppComponent implements OnChanges, OnInit, OnDestroy {
   public title = 'inicio';
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log('Change ->', changes);
+  }
+
+  ngOnInit(): void {
+    console.log('OnInit -> ');
+  }
+
+  ngOnDestroy(): void {
+    console.log('Destroy')
+  }
 }
