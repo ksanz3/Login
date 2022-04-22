@@ -17,7 +17,7 @@ export class LoginComponent {
     const user = {email: this.email, password: this.password};
     this.userService.login(user).subscribe( data => {
       this.userService.setToken(data.token);
-      this.router.navigateByUrl('/home');
+      this.router.navigateByUrl('/users');
     });
   }
 }
