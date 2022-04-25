@@ -18,7 +18,6 @@ export class LoginComponent implements OnInit, OnChanges, OnDestroy {
     console.log('Changes')
   }
   ngOnInit(): void {
-    console.log('Init')
   }
 
   constructor(public userService: UsersService, public router: Router) { }

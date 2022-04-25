@@ -6,7 +6,6 @@ import { UsersService } from '../users.service';
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.css']
 })
-
 export class UsersComponent implements OnInit {
 
   constructor(public usersService: UsersService) { }
