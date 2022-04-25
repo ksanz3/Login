@@ -1,3 +1,7 @@
 .welcome {
-    margin-top: 100px;
+  margin-top: 60px;
+  }
+  .welcome p {
+    padding-top: 5px;
+    text-align: justify;
   }

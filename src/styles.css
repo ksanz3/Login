@@ -1,19 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
-/* app/styles.css */
-h1,
+* {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    background: #ecf0f3;
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    text-shadow: #ffffff 2px 2px 10px
+  }
+
   h2,
   h3,
   h4,
-  h5,
-  h6 {
+  h5 {
     margin: 8px 0;
+  }
+
+  h6 {
+    margin: auto;
+    margin-top: 1vh;
+    font-weight: bold;
   }
 
   p {
     margin: 0;
   }
 
-  
   a,
   a:visited,
   a:hover {
@@ -26,7 +43,7 @@ h1,
   a:hover {
     color: #e79f9f;
   }
-  
+
 img {
     margin: 1px;
     padding: 1px;
@@ -35,6 +52,7 @@ img {
 .spacer {
     flex: 1;
   }
+
 .toolbar {
     position: absolute;
     top: 0;
@@ -68,27 +86,13 @@ img {
   .toolbar #instagram-logo:hover {
     opacity: 0.8;
   }
-* {
-    box-sizing: border-box;
-  }
-  html,
-  body {
-    background: #ecf0f3;
-  }
-  h1 {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    text-shadow: #ffffff 2px 2px 10px
-  }
 
   .custom-form {
     margin: 0px auto;
     margin-top: 5rem;
     margin-bottom: 3rem;
     min-width: 10vw;
-    max-width: 40vw;
+    max-width: 450px;
     padding: 1rem 3rem 3rem;
     border-radius: 2.5rem;
     background-color: #c2c1c1;
@@ -102,8 +106,7 @@ img {
     border-radius: 0.5rem;
     padding: 1rem;
     border: none;
-    box-shadow: inset -5px -5px 15px #837f7fcc, inset 5px 5px 10px
-        rgba(0, 0, 0, 0.1);
+    box-shadow: inset -5px -5px 15px #beb4b4cc, inset 5px 5px 10px #0000001a;
     border: 0 none;
     background: #ffffff;
   }
@@ -114,35 +117,33 @@ img {
     font-size: 0.875rem;
     color: #858080;
     font-weight: bold;
-    background-color: #ffffff;
     width: 100%;
     display: block;
+    margin-bottom: 15px;
     padding: 0.875rem 1rem;
+    background-color: #ffffff;
     border-radius: 1.5rem;
-    box-shadow: 3px 3px 8px #e29393;
+    box-shadow: 3px 3px 8px #ab93e2;
     cursor: pointer;
   }
 
   footer {
     display: flex;
+    flex: 1;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
     font-family: arial;
+    font-size: 12pt;
   }
 
-  footer a {
-    display: flex;
-    align-items: center;
+  .linkf {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: #000000 3px -2px 3px;
   }
 
   .footer{
     width: 100vw;
-    height: 5vh;
-    background-color: #e79f9f;
-  }
-
-  h6 {
-    margin: auto;
-    margin-top: 1vh;
-    font-weight: bold;
+    height: 4vh;
+    background-color: #c2c1c1;
   }

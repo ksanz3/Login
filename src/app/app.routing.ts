@@ -7,7 +7,7 @@ import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 
 const appRoutes = [
-    { path: "", component: AppComponent, pathMatch: "full" },
+    { path: '', component: AppComponent, pathMatch: "full" },
     { path: 'users', component: UsersComponent,  pathMatch: 'full'},
     { path: 'home', component: HomeComponent, pathMatch: 'full'},
     { path: 'login', component: LoginComponent, pathMatch: "full" },
